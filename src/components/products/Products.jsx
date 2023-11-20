@@ -5,9 +5,11 @@ export const Products = () => {
   return (
     <div>
       <h1>Products Page!!!</h1>
-      <Link to='featured-products'>Featured</Link>
-      -----||-----
-      <Link to='new-products'>New</Link>
+      <nav>
+        <Link to="featured-products">Featured</Link>
+        -----||-----
+        <Link to="new-products">New</Link>
+      </nav>
       <Outlet />
     </div>
   );
