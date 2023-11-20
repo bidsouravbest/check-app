@@ -8,11 +8,14 @@ const UserDetails = () => {
   return (
     <div>
       {data.map((item) => {
+        const status = item.status === "disb" ? "Not Active" : "Active";
         if (item.userId == userId) {
           return (
             <div>
+              <p>-----------------------------</p>
               <h1>USER ID: {item.userId}</h1>
               <h2>NAME: {item.name}</h2>
+              <h3>Account Status: {status}</h3>
             </div>
           );
         }
