@@ -14,6 +14,7 @@ const UserDetails = () => {
             <div>
               <p>-----------------------------</p>
               <h1>USER ID: {item.userId}</h1>
+              <h2>USER-NAME: {item.username}</h2>
               <h2>NAME: {item.name}</h2>
               <h3>Account Status: {status}</h3>
             </div>

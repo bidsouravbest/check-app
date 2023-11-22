@@ -1,6 +1,6 @@
 import React from "react";
-import NavBar from "./NavBar";
-import Users from "./users/Users";
+import NavBar from "../navigation/NavBar";
+import Users from "../login/users/Users";
 
 const Home = () => {
   return (
