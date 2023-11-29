@@ -17,6 +17,10 @@ const NavBar = () => {
       <Link to="/profile">Profile</Link>
       ---||||---
       {!auth.user && <Link to="/login">Login</Link>}
+      ---||||---
+      <Link to="/register">Registration</Link>
+      ---||||---
+      <Link to="/child-parent">ChildToParent</Link>
     </nav>
   );
 };

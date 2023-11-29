@@ -15,6 +15,9 @@ import PageNotFound from './components/messages/PageNotFound';
 import Login from './components/login/Login';
 import { AuthProvider } from './components/utils/Auth';
 import RequireAuth from './components/login/RequireAuth';
+import Registration from './components/form/Registration';
+import Child from './components/child-parent/Child';
+import Parent from './components/child-parent/Parent';
 
 const LazyAbout = React.lazy(() => import('./components/about/About'));
 
@@ -41,6 +44,8 @@ function App() {
           <Route path='users/admin' element={<AdminDetails />} />
           <Route path='profile' element={<RequireAuth><Profile /></RequireAuth>} />
           <Route path='login' element={<Login />} />
+          <Route path='register' element={<Registration />} />
+          <Route path='child-parent' element={<Parent />} />
           <Route path='*' element={<PageNotFound />} />
         </Routes>
       </AuthProvider>
